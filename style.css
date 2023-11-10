@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+    --title-font: 'The Girl Next Door', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* Header */
 
 .logo-header img {
@@ -13,10 +25,10 @@
 .header-title {
     font-size: 1.5rem;
     margin-top: 30px;
-    font-family: 'The Girl Next Door', cursive;
+    font-family: var(--title-font);
 }
 
-/* Navigation et search barre */
+/* Navigation et search bar */
 
 .desktop-display {
     display: none;
@@ -45,3 +57,43 @@ form input {
 
 
 /* Fin Header */
+
+/* Main */
+main {
+    height: calc(100vh - 209px);
+}
+/* Fin main */
+
+/* Footer */
+footer {
+    width: 100%;
+    background: rgb(48,18,18);
+    background: linear-gradient(180deg, rgba(48,18,18,0.5303430079155673) 0%, rgba(48,18,18,1) 35%, rgba(48,18,18,1) 100%);
+}
+
+.logo-footer {
+    height: 80px;
+}
+
+.title-footer {
+    font-family: var(--title-font);
+    font-size: 1.3rem;
+    align-self:center;
+    color: whitesmoke
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-network {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 30px;
+    color: whitesmoke;
+      
+}
+
