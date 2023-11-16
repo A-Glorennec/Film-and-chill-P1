@@ -24,8 +24,9 @@ a {
 
 /* Header */
 header {
-    background: linear-gradient(169deg, rgba(163,152,156,1) 0%, rgba(203,196,196,1) 35%, rgba(244,242,242,1) 100%);
-    padding-bottom: 15px;
+background: rgb(143,106,106);
+background: linear-gradient(0deg, rgba(143,106,106,0.41025641025641024) 0%, rgba(124,60,60,0.5025641025641026) 72%, rgba(71,31,31,1) 98%);
+padding-bottom: 15px;
 }
 
 .logo-header img {
@@ -88,12 +89,12 @@ main {
     flex: 1;
     font-family: var(--main-font);
     font-size: 0.8rem;
+    background: rgb(163,152,156);
     background: linear-gradient(169deg, rgba(163,152,156,1) 0%, rgba(203,196,196,1) 35%, rgba(244,242,242,1) 100%);
 }
 
 .background-img {
     position: absolute;
-    width: 100%;
 }
 
 .img1 {
@@ -145,9 +146,9 @@ main {
 /* Footer */
 footer {
     width: 100%;
-    background: linear-gradient(169deg, rgba(163,152,156,1) 0%, rgba(203,196,196,1) 35%, rgba(244,242,242,1) 100%);
+    background: rgb(91,52,52);
+    background: linear-gradient(0deg, rgba(91,52,52,1) 30%, rgba(204,187,184,1) 74%);
     z-index: 1;
-    margin-top: 30px;
 }
 
 .logo-footer {
@@ -168,7 +169,7 @@ footer {
 }
 
 .social-network {
-    padding: 0 10px 10px 0;
+    padding: 10px;
     display: flex;
     width: 100%;
     justify-content: flex-end;
