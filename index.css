@@ -24,7 +24,7 @@ a {
 
 /* Header */
 header {
-    background: linear-gradient(169deg, rgba(163,152,156,1) 0%, rgba(203,196,196,1) 35%, rgba(244,242,242,1) 100%);
+    background: linear-gradient(184deg, rgba(139,132,134,1) 42%, rgba(186,180,180,0.7415254237288136) 84%);
     padding-bottom: 15px;
 }
 
@@ -88,8 +88,9 @@ main {
     flex: 1;
     font-family: var(--main-font);
     font-size: 0.8rem;
-    background: linear-gradient(169deg, rgba(163,152,156,1) 0%, rgba(203,196,196,1) 35%, rgba(244,242,242,1) 100%);
+    background: -webkit-linear-gradient(184deg, rgba(139,132,134,1) 42%, rgba(186,180,180,1) 100%);
 }
+
 
 .background-img {
     position: absolute;
@@ -107,45 +108,14 @@ main {
     opacity: 0.5;
 }
 
-    /* Section container on display*/
-.container-on-display {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    position: relative;
+.grey {
+    color: grey;
 }
-
-.cards-on-display {
-    background-color: rgba(0, 0, 0, 0.500);
-    border-radius: var(--border-radius-all);
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
-
-.on-display-title {
-    padding-left: 15px;
-    padding-bottom: 5px;
-    color: whitesmoke;
-}
-
-.on-display-img {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.on-display-img img {
-    width: 45%;
-}
-
-/* Fin main */
 
 /* Footer */
 footer {
     width: 100%;
-    background: linear-gradient(169deg, rgba(163,152,156,1) 0%, rgba(203,196,196,1) 35%, rgba(244,242,242,1) 100%);
+    background: rgb(139, 132, 134); 
     z-index: 1;
     margin-top: 30px;
 }
@@ -178,5 +148,3 @@ footer {
 .social-network-logo {
     height: 19px;
 }
-
-
