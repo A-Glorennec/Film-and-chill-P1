@@ -237,6 +237,7 @@ main {
 .card-on-display img {
     border-radius: 10px 0 0 10px;
     padding-right: 5px;
+    max-width: 8rem;
 }
 
 .movie-description {
@@ -386,7 +387,7 @@ footer {
         }
 
         .container-on-display {
-            max-width: 85%;
+            max-width: 80%;
             margin: auto;
         }
     }
@@ -425,15 +426,15 @@ footer {
         .card-on-display {
             width: 45%;
             margin: 0;
-            height: 270px;
+            height: 250px;
         }
 
         .card-on-display img {
-            width: 50%;
+            max-width: 9rem;
         }
 
         .movie-description p {
-            height: 9.5rem;
+            height: 8.8rem;
         }
 
         .rating {
