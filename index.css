@@ -20,6 +20,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* Header */
@@ -48,9 +49,74 @@ header {
 
 /* Navigation et search bar */
 
+.nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Sidenav menu */
+.sidenav {
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: -250px;
+    background-color: #4F4E56;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+    padding-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    display: block;
+    transition: 0.3s;
+    font-family: var(--main-font);
+  }
+  
+  .sidenav a:hover {
+    color: #111;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+  
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0 0 15px;
+  }
+  
+
 .desktop-display {
     display: none;
 }
+
 
 form {
     margin-left: 20px;
@@ -92,7 +158,7 @@ main {
 }
 
 /*Background (main)*/
-.background-img {
+.background-img-mobile {
     position: absolute;
     width: 100%;
 }
@@ -146,6 +212,8 @@ main {
     overflow: hidden;
     padding-top: 5px;
     max-width: 34rem;
+    text-align: justify;
+    padding-right: 5px;
 }
 
 .rating {
@@ -194,7 +262,7 @@ main {
     flex-direction: column;
     gap: 30px;
     padding-bottom: 20px;
-    width: 90%;
+    width: 85%;
     margin: auto;
     position: relative;
     z-index: 1;
@@ -217,7 +285,7 @@ main {
     min-width: 100%;
     
 }
-.categories-title {
+.section-title {
     padding: 0 0 5px 5px;
 }
 
@@ -233,6 +301,7 @@ main {
 footer {
     width: 100%;
     background: linear-gradient(180deg, rgba(184,178,178,1) 29%, rgba(88,65,64,1) 54%);
+    z-index: 2;
 }
 
 .logo-footer {
@@ -248,7 +317,6 @@ footer {
 
 .footer-logo {
     display: flex;
-    justify-content: space-around;
     padding-top: 15px;
 }
 
@@ -263,3 +331,132 @@ footer {
 .social-network-logo {
     height: 19px;
 }
+
+
+/*Responsive design desktop (taille mini 768px)*/
+
+@media screen and (min-width: 768px) {
+    
+    .logo-header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .burger-icon {
+        display: none;
+    }
+
+    .desktop-display {
+        display: flex;
+        flex-direction: row;
+        gap: 19px;
+        align-items: center;
+    }
+
+
+    .sidenav a {
+        padding:0;
+        font-size: 1.2rem;
+
+    }
+
+
+    .sidenav {
+ 
+            width: 100%;
+            background: none;
+            position: static;
+            top: 0;
+            padding-top: 0;
+            padding-bottom: 0;        
+    }
+
+    .nav {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+        .container-best-rated {
+            max-width: 74%;
+            margin: auto;
+        }
+
+        .container-on-display {
+            max-width: 85%;
+            margin: auto;
+        }
+    }
+
+    @media screen and (min-width: 1023px) {
+        form input {
+            width: 200px;
+            height: 30px;
+        }
+
+        form button {
+            height: 30px;
+        }
+
+        .background-img-mobile {
+            display: none;
+        }
+         
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .section-title {
+            width: 100%;
+            padding-left: 0;
+        }
+
+        .container-on-display {
+            display: flex;
+            width: 60%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card-on-display {
+            width: 45%;
+            margin: 0;
+            height: 270px;
+        }
+
+        .card-on-display img {
+            width: 50%;
+        }
+
+        .movie-description p {
+            height: 9.5rem;
+        }
+
+        .rating {
+            padding-top: 10px;
+        }
+
+        .links {
+            padding-top: 5px;
+        }
+
+        .container-best-rated {
+            margin: 15px 0 0 0;
+            width: 30%;
+        }
+
+        .show-more {
+            width: 100%;
+            padding: 0 57px 0 0 ;
+        }
+    }
+
+
+
+
+
+    

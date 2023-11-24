@@ -9,6 +9,7 @@
         integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
@@ -23,71 +24,78 @@
             <h1 class=" header-title">Films and Chill</h1>
         </div>
         <div class="nav">
-            <nav>
+            <nav id="my-sidenav" class="sidenav">
+                <a id="close-btn" class="close" href="#">x</a>
                 <ul class="desktop-display">
                     <li><a href="index.html">A l'affiche</a></li>
-                    <li><a href="#">Catégories</a></li>
+                    <li><a href="categories.html">Catégories</a></li>
                     <li><a href="#">Tendances</a></li>
                     <li><a href="#">A propos</a></li>
                     <li><a href="#">Trouver une salle</a></li>
                 </ul>
             </nav>
+            <a href="#" id="open-btn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
             <form action="">
-                <div class="icone-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" placeholder="Chercher un film">
             </form>
         </div>
     </header>
     <!--Main-->
     <main>
-        <div class="background-img">
+        <div class="background-img-mobile">
             <img class="img1" src="assets/background-mobile-resize.png" alt="">
             <img class="img2" src="assets/background-mobile-resize.png" alt="">
         </div>
         <!--Section on display-->
-        <section class="container-on-display">
-            <article class="cards-on-display">
-                <h1 class="on-display-title">Jeunesse</h1>
-                <div class="on-display-img">
-                    <img src="assets/affiche-belle-et-la-bete.jpg" alt="Affiche La Belle et la Bête">
-                    <img src="assets/affiche-asterix-obelix.jpg" alt="Affiche Astérix et Obélix">
+        <section class="container-categories">
+            <article class="cards-categories">
+                <h1 class="categories-title">Jeunesse</h1>
+                <div class="categories-img">
+                    <img src="assets/affiches-films/affiche-belle-et-la-bete.jpg" alt="Affiche La Belle et la Bête">
+                    <img src="assets/affiches-films/affiche-asterix-obelix.jpg" alt="Affiche Astérix et Obélix">
                 </div>
             </article>
 
-            <article class="cards-on-display">
-                <h1 class="on-display-title">Fantastique</h1>
-                <div class="on-display-img">
-                    <img class="on-display-img" src="assets/affiche-la-croisee-des-mondes.jpg"
+            <article class="cards-categories">
+                <h1 class="categories-title">Fantastique</h1>
+                <div class="categories-img">
+                    <img class="categories-img" src="assets/affiches-films/affiche-la-croisee-des-mondes.jpg"
                         alt="Affiche A la croisée des mondes">
-                    <img class="on-display-img" src="assets/affiche-etoile-du-nord.jpeg" alt="Affiche L'étoile du nord">
+                    <img class="categories-img" src="assets/affiche-etoile-du-nord.jpeg" alt="Affiche L'étoile du nord">
                 </div>
             </article>
 
-            <article class=" cards-on-display">
-                <h1 class="on-display-title">Romance</h1>
-                <div class="on-display-img">
-                    <img class="on-display-img" src="assets/affiche-il-etait-temps.jpg" alt="Affiche Il etait temps">
-                    <img class="on-display-img" src="assets/affiche-me-before-you.jpg" alt="Affiche Me before you">
+            <article class=" cards-categories">
+                <h1 class="categories-title">Romance</h1>
+                <div class="categories-img">
+                    <img class="categories-img" src="assets/affiches-films/uM6xrL0c9ZRDDfoC2FOcRQUKOWz.jpg"
+                        alt="Affiche Il etait temps">
+                    <img class="categories-img" src="assets/affiches-films/108899355.jpg" alt="Affiche Me before you">
                 </div>
             </article>
 
-            <article class="cards-on-display">
-                <h1 class="on-display-title">Action</h1>
-                <div class="on-display-img">
-                    <img class="on-display-img" src="assets/affiche-mad-max.jpeg" alt="Affiche Mad Max">
-                    <img class="on-display-img" src="assets/affiche-hacker.png" alt="Affiche Hacker">
+            <article class="cards-categories">
+                <h1 class="categories-title">Action</h1>
+                <div class="categories-img">
+                    <img class="categories-img" src="assets/affiches-films/affiche-mad-max.jpeg" alt="Affiche Mad Max">
+                    <img class="categories-img" src="assets/affiches-films/affiche-hacker.png" alt="Affiche Hacker">
                 </div>
             </article>
 
-            <article class="cards-on-display">
-                <h1 class="on-display-title">Comédie</h1>
-                <div class="on-display-img">
-                    <img class="on-display-img" src="assets/affiche-cite-de-la-peur.jpg"
+            <article class="cards-categories">
+                <h1 class="categories-title">Comédie</h1>
+                <div class="categories-img">
+                    <img class="categories-img" src="assets/affiches-films/affiche-cite-de-la-peur.jpg"
                         alt="Affiche La cité de la peur">
-                    <img class="on-display-img" src="assets/affiche-ascension.jpg" alt="Affiche L'Ascension">
+                    <img class="categories-img" src="assets/affiches-films/affiche-ascension.jpg"
+                        alt="Affiche L'Ascension">
                 </div>
             </article>
         </section>
@@ -102,12 +110,18 @@
             <p class="title-footer">Films and Chill &copy</p>
         </div>
         <div class="social-network">
-            <a href="#"><img class="social-network-logo" src="assets/facebook.svg" alt="Icône Facebook"></a>
-            <a href="#"><img class="social-network-logo" src="assets/insta.svg" alt="Icône Instagram"></a>
-            <a href="#"><img class="social-network-logo" src="assets/twitter.svg" alt="Icone Twitter"></a>
-            <a href="#"><img class="social-network-logo" src="assets/mail.svg"></a>
+            <a href="#" aria-label="Lien vers la page Facebook"><img class=" social-network-logo"
+                    src="assets/facebook.svg" alt="Icône Facebook"></a>
+            <a href="#" aria-label="Lien vers la page Instagram"><img class="social-network-logo" src="assets/insta.svg"
+                    alt="Icône Instagram"></a>
+            <a href="#" aria-label="Lien vers la page X"><img class="social-network-logo" src="assets/twitter.svg"
+                    alt="Icone Twitter"></a>
+            <a href="#" aria-label="Lien pour envoyer un mail"><img class="social-network-logo" src="assets/mail.svg"
+                    alt="Icône mail"></a>
         </div>
     </footer>
+    <script src="categories.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

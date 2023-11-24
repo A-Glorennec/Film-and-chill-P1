@@ -23,7 +23,8 @@
             <h1 class=" header-title">Films and Chill</h1>
         </div>
         <div class="nav">
-            <nav>
+            <nav id="my-sidenav" class="sidenav">
+                <a id="close-btn" class="close" href="#">x</a>
                 <ul class="desktop-display">
                     <li><a href="#">A l'affiche</a></li>
                     <li><a href="categories.html">Catégories</a></li>
@@ -32,18 +33,25 @@
                     <li><a href="#">Trouver une salle</a></li>
                 </ul>
             </nav>
+            <a href="#" id="open-btn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <!--           <div class="icone-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>  -->
             <form action="">
-                <div class="icone-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input type="text" placeholder="Chercher un film">
             </form>
         </div>
     </header>
     <!--Main-->
     <main>
-        <div class="background-img">
+        <div class="background-img-mobile">
             <img class="img1" src="assets/background-mobile-resize.png" alt="">
             <img class="img2" src="assets/background-mobile-resize.png" alt="">
             <img class="img1" src="assets/background-mobile-resize.png" alt="">
@@ -81,7 +89,7 @@
             </article>
 
             <article class="card-on-display">
-                <img src="assets/affiche-babylone.jpg" alt="Affiche Babylone">
+                <img src="assets/affiches-films/affiche-babylone.jpg" alt="Affiche Babylone">
                 <div class="movie-description">
                     <h1>Babylone</h1>
                     <p>Avertissement : des scènes, des propos ou des images peuvent heurter la sensibilité des
@@ -106,7 +114,7 @@
             </article>
 
             <article class="card-on-display">
-                <img src="assets/affiche_bilbo.jpg" alt="Affiche Le Hobbit">
+                <img src="assets/affiches-films/affiche_bilbo.jpg" alt="Affiche Le Hobbit">
                 <div class="movie-description">
                     <h1>Le Hobbit</h1>
                     <p>Dans UN VOYAGE INATTENDU, Bilbon Sacquet cherche à reprendre le Royaume perdu des Nains d'Erebor,
@@ -139,7 +147,7 @@
             </article>
 
             <article class="card-on-display">
-                <img src="assets/affiche-asterix-obelix.jpg" alt="Affiche Astérix et Obélix">
+                <img src="assets/affiches-films/affiche-asterix-obelix.jpg" alt="Affiche Astérix et Obélix">
                 <div class="movie-description">
                     <h1>Astérix et Obélix</h1>
                     <p>Nous sommes en 50 avant J.C. L’Impératrice de Chine est emprisonnée suite à un coup d’état
@@ -189,7 +197,7 @@
             </article>
 
             <article class="card-best-rated">
-                <img src="assets/affiche-harry-potter-large_2.jpg" alt="Affiche Harry Potter à l'école des sorciers">
+                <img src="assets/affiche-police-large.jpg" alt="Affiche Harry Potter à l'école des sorciers">
                 <h2 class="categories-title">Policier</h2>
             </article>
             <p class="show-more2">Afficher plus</p>
@@ -206,12 +214,17 @@
             <p class="title-footer">Films and Chill &copy</p>
         </div>
         <div class="social-network">
-            <a href="#"><img class="social-network-logo" src="assets/facebook.svg" alt="Icône Facebook"></a>
-            <a href="#"><img class="social-network-logo" src="assets/insta.svg" alt="Icône Instagram"></a>
-            <a href="#"><img class="social-network-logo" src="assets/twitter.svg" alt="Icone Twitter"></a>
-            <a href="#"><img class="social-network-logo" src="assets/mail.svg"></a>
+            <a href="#" aria-label="Lien vers la page Facebook"><img class="social-network-logo"
+                    src="assets/facebook.svg" alt="Icône Facebook"></a>
+            <a href="#" aria-label="Lien vers la page Instagram"><img class="social-network-logo" src="assets/insta.svg"
+                    alt="Icône Instagram"></a>
+            <a href="#" aria-label="Lien vers la page X"><img class="social-network-logo" src="assets/twitter.svg"
+                    alt="Icone Twitter"></a>
+            <a href="#" aria-label="Lien pour envoyer un mail"><img class="social-network-logo" src="assets/mail.svg"
+                    alt="Icône mail"></a>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
