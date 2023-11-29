@@ -179,7 +179,7 @@ main {
 /*section à l'affiche*/
 
 .section-title {
-    padding-left: 30px;
+    padding-left: 2.5rem;
 }
 
 .container-on-display {
@@ -286,10 +286,6 @@ main {
     min-width: 100%;
     
 }
-.section-title {
-    padding: 0 0 5px 5px;
-}
-
 .show-more2 {
     display: flex;
     justify-content: flex-end;
@@ -376,6 +372,11 @@ footer {
         padding-left: 13px;
         padding-right: 13px;
     }
+
+    #btn-close a {
+        display: none;
+    }
+
     
     }
 
@@ -389,6 +390,10 @@ footer {
         .container-on-display {
             max-width: 80%;
             margin: auto;
+        }
+
+        .section-title {
+            padding-left: 60px;
         }
     }
 

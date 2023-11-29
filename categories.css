@@ -198,8 +198,17 @@ footer {
         display: none;
     }
 
+
     .container-categories {
         width: 95%;
+    }
+
+    .movie-container {
+        display: flex;
+        justify-content: space-evenly;
+        overflow: hidden;
+        gap: 10px;
+    }
     }
 
     .cards-categories {
