@@ -35,16 +35,16 @@ const cards = [
                 alt: "Affiche Split",
             },
             {
-                id: 5,
-                title: "Split",
-                image: "assets/affiches-films/affiche-split.jpeg",
-                alt: "Affiche Split",
+                id: 6,
+                title: "Maintenant ou Jamais",
+                image: "assets/affiches-films/affiche-maintenant-ou-jamais.jpg",
+                alt: "Affiche Maintenant ou Jamais",
             },
             {
-                id: 5,
-                title: "Split",
-                image: "assets/affiches-films/affiche-split.jpeg",
-                alt: "Affiche Split",
+                id: 7,
+                title: "L'Enlèvement",
+                image: "assets/affiches-films/affiche-enlevement.jpg",
+                alt: "Affiche L'Enlèvement",
             }
         ]
 
@@ -195,6 +195,12 @@ const cards = [
                 title: "Divorce Club",
                 image: "assets/affiches-films/affiche-divorce-club.jpg",
                 alt: "Affiche Divorce Club",
+            },
+            {
+                id: 7,
+                title: "Intouchables",
+                image: "assets/affiches-films/affiche-intouchables.jpg",
+                alt: "Affiche Intouchables",
             },
 
 
@@ -354,7 +360,12 @@ const cards = [
                 title: "Limbo",
                 image: "assets/affiches-films/affiche-limbo.jpeg",
                 alt: "Affiche Limbo",
-
+            },
+            {
+                id: 7,
+                title: "36 Quai des Orfèvres",
+                image: "assets/affiches-films/affiche-36.jpeg",
+                alt: "Affiche 36 Quai des Orfèvres",
             },
 
 
@@ -422,6 +433,16 @@ cards.map((card) => {
     movieContainer.classList.add("movie-container")
     article.appendChild(movieContainer)
 
+    const arrowLeft = document.createElement("img");
+    arrowLeft.classList.add("arrow-left")
+    arrowLeft.src = "assets/arrow-left.svg"
+    movieContainer.appendChild(arrowLeft)
+
+    const arrowRight = document.createElement("img");
+    arrowRight.classList.add("arrow-right")
+    arrowRight.src = "assets/arrow-right.svg"
+    movieContainer.appendChild(arrowRight)
+
     card.items.map((item) => {
 
         const img = document.createElement("img")
@@ -430,8 +451,6 @@ cards.map((card) => {
         img.alt = item.alt
 
         movieContainer.appendChild(img);
-
-        console.log(img.src)
 
     })
     section.appendChild(article)
