@@ -394,28 +394,6 @@ function closeNav() {
     sideNav.classList.remove("active");
 }
 
-// //   <article class=" cards-categories romance">
-// <h1 class="categories-title">Romance</h1>
-// <div class="categories-img">
-//     <img class="categories-img" src="assets/affiches-films/affiche-il-etait-temps.jpg"
-//         alt="Affiche Il etait temps">
-//     <img class="categories-img" src="assets/affiches-films/affiche-me-before-you.jpg"
-//         alt="Affiche Me before you">
-// </div>
-// </article>
-
-
-
-// const kids = document.querySelector(".kids");
-// const fantastic = document.querySelector(".fantastic");
-// const romance = document.querySelector("romance");
-// const action = document.querySelector("action");
-// const comedy = document.querySelector("comedy");
-
-// ==============================
-// une balise articles
-// un h1
-// une div => img
 const section = document.querySelector(".container-categories")
 
 cards.map((card) => {
@@ -455,3 +433,30 @@ cards.map((card) => {
     })
     section.appendChild(article)
 })
+
+
+const carouselContainers = document.querySelectorAll(".movie-container");
+
+carouselContainers.forEach((container) => {
+    const arrowLeft = container.querySelector(".arrow-left");
+    const arrowRight = container.querySelector(".arrow-right");
+
+    arrowLeft.addEventListener("click", function () {
+        scrollCarousel(container, "left");
+    });
+
+    arrowRight.addEventListener("click", function () {
+        scrollCarousel(container, "right");
+    });
+});
+
+function scrollCarousel(container, direction) {
+    const scrollAmount = 300;
+    const scrollLeft = container.scrollLeft;
+
+    if (direction === "left") {
+        container.scrollLeft = scrollLeft - scrollAmount;
+    } else if (direction === "right") {
+        container.scrollLeft = scrollLeft + scrollAmount;
+    }
+}
